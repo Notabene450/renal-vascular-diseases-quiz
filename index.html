@@ -5964,7 +5964,8 @@ function esc(s) {
    · «38.9 °C (102 °F) (normal 36.5–37.5 °C)» · «< 0.05 mU/l (normal range: 0.4-5.0 mU/l)».  Colours only — the text never changes. */
 function labRanges(t) {
   const NRM = /\(\s*(?:[Nn]ormal|NORMAL|[Rr]eference|[Rr]ef\.)(?:\s*(?:[Rr]ange|[Vv]alues?|[Ll]imits?|[Ii]nterval))?\s*[:=,]?\s*(?:(?:for|in|during|at)\s+[^()\d]{1,25}?\s*[:=,]?\s*)?[<>≤≥]?\s*\d[^()]*(?:\([^()]*\)[^()]*)*\)/g;
-  const BARE = /\(\s*(?:[<>≤≥]\s*\d[\d.,]*|\d[\d.,]*\s*(?:[–\-]|to)\s*\d[\d.,]*)(?:\s*[^()\s]+){0,2}\s*\)/g;   /* «0.15 mU/l (0.4–5)» · «102 IU/mL (< 35 IU/mL)» */
+  const BARE = /\(\s*(?:[<>≤≥]\s*\d[\d.,]*|\d[\d.,]*\s*(?:[–\-]|to)\s*\d[\d.,]*)(?:\s*[^()\s]+){0,2}\s*\)/g;
+  const NRMN = /\(\s*[Nn]\s*[:=]\s*(?:[<>≤≥]\s*)?\d[^()]*\)/g;                      /* «(N=5–97)» — اختصار المصدر لـ normal */   /* «0.15 mU/l (0.4–5)» · «102 IU/mL (< 35 IU/mL)» */
   const NUM = /^[<>≤≥~±]?\d[\d.,]*(?:[–\-\/]\d[\d.,]*)*[a-zA-Zµμ°º%²³\/^×·.\d]*$/;
   const UNIT = /^(?:[a-zA-Zµμ°º%][a-zA-Zµμ°º%²³^.\d·]*\/[a-zA-Zµμ²³\d^.·\/]+|\/[a-zA-Zµμ][a-zA-Zµμ\d²³^.·\/]*|%|[°º][CF]|mm|Hg|mmHg|kg|g|mg|mcg|[µμ]g|ng|pg|mL|ml|L|dL|dl|bpm|min|mins|minute|minutes|sec|secs|seconds|msec|ms|s|h|hr|hrs|hour|hours|IU|U|mU|mIU|mEq|mmol|[µμ]mol|nmol|pmol|mOsm|units|cm|kPa|fL|beats|breaths|per)$/;
   const out = [];
@@ -5995,6 +5996,11 @@ function labRanges(t) {
   };
   let m;
   while ((m = NRM.exec(t))) {                               /* «(normal …)» = 🔵 always · the value before it = 🔴 */
+    const ns = m.index, ne = ns + m[0].length, v = valueBefore(ns);
+    if (v) add(v[0], v[1], "labv");
+    add(ns, ne, "labn");
+  }
+  while ((m = NRMN.exec(t))) {                            /* «(N=5–97)» — نفس معنى «(normal…)» في اختصار الملف = 🔵 (والقيمة قبلها = 🔴) */
     const ns = m.index, ne = ns + m[0].length, v = valueBefore(ns);
     if (v) add(v[0], v[1], "labv");
     add(ns, ne, "labn");
