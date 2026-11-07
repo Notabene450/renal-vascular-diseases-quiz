@@ -1404,7 +1404,7 @@ img,svg,video,table,pre{max-width:100%}
 <div id="idxpanel"></div>
 
 <!-- ===== RIGHT SIDE: the keyword list + the search ===== -->
-<button id="searchbtn" title="the keywords of the quiz (renal artery stenosis, renal vein thrombosis, cholesterol embolisation, atheroembolic, TMA, thrombotic microangiopathy, HUS, TTP, ADAMTS13, antiphospholipid, APS, lupus anticoagulant, anticardiolipin, β2 glycoprotein, membranous nephropathy, nephrotic syndrome, antithrombin, protein C, protein S)">&#128269;</button>
+<button id="searchbtn" title="the keywords of the quiz (renal artery stenosis, bilateral renal artery stenosis, ACE inhibitors, ARB, renovascular, renal vein thrombosis, membranous nephropathy, cholesterol embolization, atheroembolic, AKI, TTP, HUS, ADAMTS13, antiphospholipid, secondary antiphospholipid, SLE, DVT, microangiopathic)">&#128269;</button>
 <!-- ===== ZOOM: كبّر/صغّر الصفحة كلها ===== -->
 <div id="zoombox">
   <button class="zbtn" id="zoomout" type="button" title="smaller">−</button>
@@ -1600,26 +1600,41 @@ const secColor = s => SEC_COLORS[s] || "#6a4c93";
 
 const MASTER = [
  {
-  "mode": "saq",
+  "mode": "mcq",
   "sec": "1) تضيق الشريان الكلوي (Renal artery stenosis)",
   "n": 1,
   "page": "PAST_YEARS",
   "key": "1) تضيق الشريان الكلوي (Renal artery stenosis)|1",
   "ai": {
-   "choices": [],
-   "ans": [],
+   "choices": [
+    "conn's syndrome",
+    "bilateral renal artery stenosis",
+    "unilateral renal artery stenosis",
+    "cholesterol embolization"
+   ],
+   "ans": [
+    1
+   ],
    "text": "14- 60 year old with elevated creatinine taking ARBs : the cause is due to : conn’s, bilateral renal artery stenosis",
    "why": [
     "أساس الإجابة نص الريكول يضع الحديث في «taking ARBs» مع ارتفاع الكرياتينين، والجواب المسجل هو bilateral renal artery stenosis ؛ لا يوجد حرف مفتاح مطبوع في هذه الصيغة.",
-    "الإجابة الواردة في المصدر: الإجابة: bilateral renal artery stenosis."
+    "الإجابة الواردة في المصدر: الإجابة: bilateral renal artery stenosis.",
+    "الاختيارات الثلاثة التانية (المغلطات) مضافة كتدريب للاختبار فقط — مش من المصدر؛ الجواب المسطور في الملف هو «الإجابة: bilateral renal artery stenosis.»."
    ]
   },
   "pdf": {
-   "type": "saq",
-   "choices": [],
-   "ans": [],
-   "note": "الإجابة: bilateral renal artery stenosis.",
-   "lead": "الإجابة: bilateral renal artery stenosis."
+   "type": "mcq",
+   "choices": [
+    "conn's syndrome",
+    "bilateral renal artery stenosis",
+    "unilateral renal artery stenosis",
+    "cholesterol embolization"
+   ],
+   "ans": [
+    1
+   ],
+   "note": "الإجابة المسطورة في المصدر: الإجابة: bilateral renal artery stenosis. (لا يوجد حرف مفتاح مطبوع)",
+   "lead": null
   },
   "lines": [
    {
@@ -1632,36 +1647,51 @@ const MASTER = [
    },
    {
     "p": "PAST_YEARS",
-    "t": "✅ الإجابة (كما هي مسطورة في المصدر): الإجابة: bilateral renal artery stenosis."
+    "t": "✅ الإجابة المسطورة في المصدر (لا يوجد حرف مفتاح مطبوع): الإجابة: bilateral renal artery stenosis."
    },
    {
     "p": "PAST_YEARS",
     "t": "ليه داخل المحاضرة: ليه داخل المحاضرة؟ المحاضرة تذكر ضمن الصورة السريرية «Deterioration of renal function with ACEI or ARB therapy»، وتنص في العلاج أن ACEI وARB غير مسموحين لو اشتُبه في bilateral renal artery stenosis — وهذا هو نفس منطق السؤال."
    }
   ],
-  "why": "أساس الإجابة نص الريكول يضع الحديث في «taking ARBs» مع ارتفاع الكرياتينين، والجواب المسجل هو bilateral renal artery stenosis ؛ لا يوجد حرف مفتاح مطبوع في هذه الصيغة.\nالإجابة الواردة في المصدر: الإجابة: bilateral renal artery stenosis."
+  "why": "أساس الإجابة نص الريكول يضع الحديث في «taking ARBs» مع ارتفاع الكرياتينين، والجواب المسجل هو bilateral renal artery stenosis ؛ لا يوجد حرف مفتاح مطبوع في هذه الصيغة.\nالإجابة الواردة في المصدر: الإجابة: bilateral renal artery stenosis.\nالاختيارات الثلاثة التانية (المغلطات) مضافة كتدريب للاختبار فقط — مش من المصدر؛ الجواب المسطور في الملف هو «الإجابة: bilateral renal artery stenosis.»."
  },
  {
-  "mode": "saq",
+  "mode": "mcq",
   "sec": "1) تضيق الشريان الكلوي (Renal artery stenosis)",
   "n": 2,
   "page": "PAST_YEARS",
   "key": "1) تضيق الشريان الكلوي (Renal artery stenosis)|2",
   "ai": {
-   "choices": [],
-   "ans": [],
+   "choices": [
+    "ttt with ACE I deteriorates Renal function",
+    "ttt with ACE I improves Renal function",
+    "ttt with ACE I has no effect on Renal function",
+    "ttt with ACE I dilates the renal artery"
+   ],
+   "ans": [
+    0
+   ],
    "text": "22. Renal Artery Stenosis ttt with ACE I deteriorates Renal function",
    "why": [
     "أساس الإجابة الجملة الثانية في البلوك هي الجواب المطبوع، وليست تعليقًا من البنك.",
-    "الإجابة الواردة في المصدر: الإجابة المطبوعة: ttt with ACE I deteriorates Renal function."
+    "الإجابة الواردة في المصدر: الإجابة المطبوعة: ttt with ACE I deteriorates Renal function.",
+    "الاختيارات الثلاثة التانية (المغلطات) مضافة كتدريب للاختبار فقط — مش من المصدر؛ الجواب المسطور في الملف هو «الإجابة المطبوعة: ttt with ACE I deteriorates Renal function.»."
    ]
   },
   "pdf": {
-   "type": "saq",
-   "choices": [],
-   "ans": [],
-   "note": "الإجابة المطبوعة: ttt with ACE I deteriorates Renal function.",
-   "lead": "الإجابة المطبوعة: ttt with ACE I deteriorates Renal function."
+   "type": "mcq",
+   "choices": [
+    "ttt with ACE I deteriorates Renal function",
+    "ttt with ACE I improves Renal function",
+    "ttt with ACE I has no effect on Renal function",
+    "ttt with ACE I dilates the renal artery"
+   ],
+   "ans": [
+    0
+   ],
+   "note": "الإجابة المسطورة في المصدر: الإجابة المطبوعة: ttt with ACE I deteriorates Renal function. (لا يوجد حرف مفتاح مطبوع)",
+   "lead": null
   },
   "lines": [
    {
@@ -1674,36 +1704,51 @@ const MASTER = [
    },
    {
     "p": "PAST_YEARS",
-    "t": "✅ الإجابة (كما هي مسطورة في المصدر): الإجابة المطبوعة: ttt with ACE I deteriorates Renal function."
+    "t": "✅ الإجابة المسطورة في المصدر (لا يوجد حرف مفتاح مطبوع): الإجابة المطبوعة: ttt with ACE I deteriorates Renal function."
    },
    {
     "p": "PAST_YEARS",
     "t": "ليه داخل المحاضرة: ليه داخل المحاضرة؟ فقرة Treatment في المحاضرة: منع renin–angiotensin system بـACEI/ARB/BB، ومنع ACEI وARB عند suspicion of bilateral renal artery stenosis."
    }
   ],
-  "why": "أساس الإجابة الجملة الثانية في البلوك هي الجواب المطبوع، وليست تعليقًا من البنك.\nالإجابة الواردة في المصدر: الإجابة المطبوعة: ttt with ACE I deteriorates Renal function."
+  "why": "أساس الإجابة الجملة الثانية في البلوك هي الجواب المطبوع، وليست تعليقًا من البنك.\nالإجابة الواردة في المصدر: الإجابة المطبوعة: ttt with ACE I deteriorates Renal function.\nالاختيارات الثلاثة التانية (المغلطات) مضافة كتدريب للاختبار فقط — مش من المصدر؛ الجواب المسطور في الملف هو «الإجابة المطبوعة: ttt with ACE I deteriorates Renal function.»."
  },
  {
-  "mode": "saq",
+  "mode": "mcq",
   "sec": "2) خثار الوريد الكلوي (Renal vein thrombosis)",
   "n": 3,
   "page": "PAST_YEARS",
   "key": "2) خثار الوريد الكلوي (Renal vein thrombosis)|3",
   "ai": {
-   "choices": [],
-   "ans": [],
+   "choices": [
+    "IgA nephropathy",
+    "Membranous GN (membranous nephropathy)",
+    "Minimal change disease",
+    "Focal segmental glomerulosclerosis"
+   ],
+   "ans": [
+    1
+   ],
    "text": "25. Renal vein thrombosis → membranous GN",
    "why": [
     "أساس الإجابة البلوك كله سطر ريكول واحد: السؤال ثم الجواب بالسهم.",
-    "الإجابة الواردة في المصدر: الإجابة المطبوعة: membranous GN (membranous nephropathy)."
+    "الإجابة الواردة في المصدر: الإجابة المطبوعة: membranous GN (membranous nephropathy).",
+    "الاختيارات الثلاثة التانية (المغلطات) مضافة كتدريب للاختبار فقط — مش من المصدر؛ الجواب المسطور في الملف هو «الإجابة المطبوعة: membranous GN (membranous nephropathy).»."
    ]
   },
   "pdf": {
-   "type": "saq",
-   "choices": [],
-   "ans": [],
-   "note": "الإجابة المطبوعة: membranous GN (membranous nephropathy).",
-   "lead": "الإجابة المطبوعة: membranous GN (membranous nephropathy)."
+   "type": "mcq",
+   "choices": [
+    "IgA nephropathy",
+    "Membranous GN (membranous nephropathy)",
+    "Minimal change disease",
+    "Focal segmental glomerulosclerosis"
+   ],
+   "ans": [
+    1
+   ],
+   "note": "الإجابة المسطورة في المصدر: الإجابة المطبوعة: membranous GN (membranous nephropathy). (لا يوجد حرف مفتاح مطبوع)",
+   "lead": null
   },
   "lines": [
    {
@@ -1716,14 +1761,14 @@ const MASTER = [
    },
    {
     "p": "PAST_YEARS",
-    "t": "✅ الإجابة (كما هي مسطورة في المصدر): الإجابة المطبوعة: membranous GN (membranous nephropathy)."
+    "t": "✅ الإجابة المسطورة في المصدر (لا يوجد حرف مفتاح مطبوع): الإجابة المطبوعة: membranous GN (membranous nephropathy)."
    },
    {
     "p": "PAST_YEARS",
     "t": "ليه داخل المحاضرة: ليه داخل المحاضرة؟ المحاضرة تربط hypercoagulability في RVT بالـnephrotic syndrome و«particularly membranous nephropathy»."
    }
   ],
-  "why": "أساس الإجابة البلوك كله سطر ريكول واحد: السؤال ثم الجواب بالسهم.\nالإجابة الواردة في المصدر: الإجابة المطبوعة: membranous GN (membranous nephropathy)."
+  "why": "أساس الإجابة البلوك كله سطر ريكول واحد: السؤال ثم الجواب بالسهم.\nالإجابة الواردة في المصدر: الإجابة المطبوعة: membranous GN (membranous nephropathy).\nالاختيارات الثلاثة التانية (المغلطات) مضافة كتدريب للاختبار فقط — مش من المصدر؛ الجواب المسطور في الملف هو «الإجابة المطبوعة: membranous GN (membranous nephropathy).»."
  },
  {
   "mode": "mcq",
@@ -1798,26 +1843,41 @@ const MASTER = [
   "why": "أساس الإجابة المحاضرة تسرد تحت RVT: «Hypercoagulability due to nephrotic syndrome … protein C and S, antithrombin deficiency»، وفقدان هذه المواد في البول هو الميكانيزم المذكور؛ لذلك C هو الاختيار الصحيح، والأساس موثق هنا ولا يُنسب إلى مفتاح لم يُطبع.\nالإجابة الواردة في المصدر: الإجابة: C — Increased urinary excretion of antithrombin, protein C, and protein S."
  },
  {
-  "mode": "saq",
+  "mode": "mcq",
   "sec": "2) خثار الوريد الكلوي (Renal vein thrombosis)",
   "n": 5,
   "page": "PAST_YEARS",
   "key": "2) خثار الوريد الكلوي (Renal vein thrombosis)|5",
   "ai": {
-   "choices": [],
-   "ans": [],
+   "choices": [
+    "IgA nephropathy",
+    "Alport syndrome",
+    "Minimal change disease",
+    "Membranous nephropathy"
+   ],
+   "ans": [
+    3
+   ],
    "text": "Hypercoagulability in which nephrotic disease? Membranous nephropathy",
    "why": [
     "أساس الإجابة سطر الريكول يطبع السؤال والجواب معًا؛ النسخة f075 تكتبها «Hypercoagilability» بالخطأ الإملائي في المصدر.",
-    "الإجابة الواردة في المصدر: الإجابة المطبوعة: Membranous nephropathy."
+    "الإجابة الواردة في المصدر: الإجابة المطبوعة: Membranous nephropathy.",
+    "الاختيارات الثلاثة التانية (المغلطات) مضافة كتدريب للاختبار فقط — مش من المصدر؛ الجواب المسطور في الملف هو «الإجابة المطبوعة: Membranous nephropathy.»."
    ]
   },
   "pdf": {
-   "type": "saq",
-   "choices": [],
-   "ans": [],
-   "note": "الإجابة المطبوعة: Membranous nephropathy.",
-   "lead": "الإجابة المطبوعة: Membranous nephropathy."
+   "type": "mcq",
+   "choices": [
+    "IgA nephropathy",
+    "Alport syndrome",
+    "Minimal change disease",
+    "Membranous nephropathy"
+   ],
+   "ans": [
+    3
+   ],
+   "note": "الإجابة المسطورة في المصدر: الإجابة المطبوعة: Membranous nephropathy. (لا يوجد حرف مفتاح مطبوع)",
+   "lead": null
   },
   "lines": [
    {
@@ -1830,14 +1890,14 @@ const MASTER = [
    },
    {
     "p": "PAST_YEARS",
-    "t": "✅ الإجابة (كما هي مسطورة في المصدر): الإجابة المطبوعة: Membranous nephropathy."
+    "t": "✅ الإجابة المسطورة في المصدر (لا يوجد حرف مفتاح مطبوع): الإجابة المطبوعة: Membranous nephropathy."
    },
    {
     "p": "PAST_YEARS",
     "t": "ليه داخل المحاضرة: ليه داخل المحاضرة؟ المحاضرة تحدد membranous nephropathy كأشهر سبب لفرط التخثر المؤدي إلى renal vein thrombosis."
    }
   ],
-  "why": "أساس الإجابة سطر الريكول يطبع السؤال والجواب معًا؛ النسخة f075 تكتبها «Hypercoagilability» بالخطأ الإملائي في المصدر.\nالإجابة الواردة في المصدر: الإجابة المطبوعة: Membranous nephropathy."
+  "why": "أساس الإجابة سطر الريكول يطبع السؤال والجواب معًا؛ النسخة f075 تكتبها «Hypercoagilability» بالخطأ الإملائي في المصدر.\nالإجابة الواردة في المصدر: الإجابة المطبوعة: Membranous nephropathy.\nالاختيارات الثلاثة التانية (المغلطات) مضافة كتدريب للاختبار فقط — مش من المصدر؛ الجواب المسطور في الملف هو «الإجابة المطبوعة: Membranous nephropathy.»."
  },
  {
   "mode": "mcq",
@@ -1918,26 +1978,41 @@ const MASTER = [
   "why": "أساس الإجابة المحاضرة: «showers of cholesterol rich atheromatous material … after catheterization of abdominal aorta or renal artery angioplasty … rapidly progressive renal failure with systemic embolization»، مع livedo reticularis وemboli للـperiphery. eosinophilia وdusky toes هنا يرجّحان cholesterol embolisation على contrast nephropathy.\nالإجابة الواردة في المصدر: الإجابة: A — Cholesterol embolisation."
  },
  {
-  "mode": "saq",
+  "mode": "mcq",
   "sec": "3) المرض الأثيري الانصمامي الكلوي (Athero-embolic renal disease)",
   "n": 7,
   "page": "PAST_YEARS",
   "key": "3) المرض الأثيري الانصمامي الكلوي (Athero-embolic renal disease)|7",
   "ai": {
-   "choices": [],
-   "ans": [],
+   "choices": [
+    "Contrast nephropathy",
+    "Cholesterol embolization",
+    "Renal artery thrombosis",
+    "Acute tubular necrosis"
+   ],
+   "ans": [
+    1
+   ],
    "text": "8- A patient after vascular surgery (Cholesterol embolization).",
    "why": [
     "أساس الإجابة سطر ريكول واحد يطبع الحالة والجواب معًا.",
-    "الإجابة الواردة في المصدر: الإجابة المطبوعة: Cholesterol embolization."
+    "الإجابة الواردة في المصدر: الإجابة المطبوعة: Cholesterol embolization.",
+    "الاختيارات الثلاثة التانية (المغلطات) مضافة كتدريب للاختبار فقط — مش من المصدر؛ الجواب المسطور في الملف هو «الإجابة المطبوعة: Cholesterol embolization.»."
    ]
   },
   "pdf": {
-   "type": "saq",
-   "choices": [],
-   "ans": [],
-   "note": "الإجابة المطبوعة: Cholesterol embolization.",
-   "lead": "الإجابة المطبوعة: Cholesterol embolization."
+   "type": "mcq",
+   "choices": [
+    "Contrast nephropathy",
+    "Cholesterol embolization",
+    "Renal artery thrombosis",
+    "Acute tubular necrosis"
+   ],
+   "ans": [
+    1
+   ],
+   "note": "الإجابة المسطورة في المصدر: الإجابة المطبوعة: Cholesterol embolization. (لا يوجد حرف مفتاح مطبوع)",
+   "lead": null
   },
   "lines": [
    {
@@ -1950,36 +2025,51 @@ const MASTER = [
    },
    {
     "p": "PAST_YEARS",
-    "t": "✅ الإجابة (كما هي مسطورة في المصدر): الإجابة المطبوعة: Cholesterol embolization."
+    "t": "✅ الإجابة المسطورة في المصدر (لا يوجد حرف مفتاح مطبوع): الإجابة المطبوعة: Cholesterol embolization."
    },
    {
     "p": "PAST_YEARS",
     "t": "ليه داخل المحاضرة: ليه داخل المحاضرة؟ المحاضرة تنص أن الانصمام الكوليسترولي قد يحدث بعد تدخل/جراحة على الأوعية (catheterization، angioplasty)."
    }
   ],
-  "why": "أساس الإجابة سطر ريكول واحد يطبع الحالة والجواب معًا.\nالإجابة الواردة في المصدر: الإجابة المطبوعة: Cholesterol embolization."
+  "why": "أساس الإجابة سطر ريكول واحد يطبع الحالة والجواب معًا.\nالإجابة الواردة في المصدر: الإجابة المطبوعة: Cholesterol embolization.\nالاختيارات الثلاثة التانية (المغلطات) مضافة كتدريب للاختبار فقط — مش من المصدر؛ الجواب المسطور في الملف هو «الإجابة المطبوعة: Cholesterol embolization.»."
  },
  {
-  "mode": "saq",
+  "mode": "mcq",
   "sec": "3) المرض الأثيري الانصمامي الكلوي (Athero-embolic renal disease)",
   "n": 8,
   "page": "PAST_YEARS",
   "key": "3) المرض الأثيري الانصمامي الكلوي (Athero-embolic renal disease)|8",
   "ai": {
-   "choices": [],
-   "ans": [],
+   "choices": [
+    "Atheroembolic AKI",
+    "Contrast nephropathy",
+    "Haemolytic-uraemic syndrome",
+    "Acute interstitial nephritis"
+   ],
+   "ans": [
+    0
+   ],
    "text": "Case about Atheroembolic AKI (post cardiac catheterization, epigastric pain, diminished peripheral pulsations)",
    "why": [
     "أساس الإجابة الملف يعرض الحالة تحت عنوان Atheroembolic AKI نفسه، أي أن الإجابة جزء من نص المصدر لا استنتاجًا من البنك.",
-    "الإجابة الواردة في المصدر: الإجابة المكتوبة في الأصل: Atheroembolic AKI."
+    "الإجابة الواردة في المصدر: الإجابة المكتوبة في الأصل: Atheroembolic AKI.",
+    "الاختيارات الثلاثة التانية (المغلطات) مضافة كتدريب للاختبار فقط — مش من المصدر؛ الجواب المسطور في الملف هو «الإجابة المكتوبة في الأصل: Atheroembolic AKI.»."
    ]
   },
   "pdf": {
-   "type": "saq",
-   "choices": [],
-   "ans": [],
-   "note": "الإجابة المكتوبة في الأصل: Atheroembolic AKI.",
-   "lead": "الإجابة المكتوبة في الأصل: Atheroembolic AKI."
+   "type": "mcq",
+   "choices": [
+    "Atheroembolic AKI",
+    "Contrast nephropathy",
+    "Haemolytic-uraemic syndrome",
+    "Acute interstitial nephritis"
+   ],
+   "ans": [
+    0
+   ],
+   "note": "الإجابة المسطورة في المصدر: الإجابة المكتوبة في الأصل: Atheroembolic AKI. (لا يوجد حرف مفتاح مطبوع)",
+   "lead": null
   },
   "lines": [
    {
@@ -1992,14 +2082,14 @@ const MASTER = [
    },
    {
     "p": "PAST_YEARS",
-    "t": "✅ الإجابة (كما هي مسطورة في المصدر): الإجابة المكتوبة في الأصل: Atheroembolic AKI."
+    "t": "✅ الإجابة المسطورة في المصدر (لا يوجد حرف مفتاح مطبوع): الإجابة المكتوبة في الأصل: Atheroembolic AKI."
    },
    {
     "p": "PAST_YEARS",
     "t": "ليه داخل المحاضرة: ليه داخل المحاضرة؟ القسطرة القلبية ونقص النبضات المحيطية هما تمامًا سياق «بعد catheterization» في المحاضرة."
    }
   ],
-  "why": "أساس الإجابة الملف يعرض الحالة تحت عنوان Atheroembolic AKI نفسه، أي أن الإجابة جزء من نص المصدر لا استنتاجًا من البنك.\nالإجابة الواردة في المصدر: الإجابة المكتوبة في الأصل: Atheroembolic AKI."
+  "why": "أساس الإجابة الملف يعرض الحالة تحت عنوان Atheroembolic AKI نفسه، أي أن الإجابة جزء من نص المصدر لا استنتاجًا من البنك.\nالإجابة الواردة في المصدر: الإجابة المكتوبة في الأصل: Atheroembolic AKI.\nالاختيارات الثلاثة التانية (المغلطات) مضافة كتدريب للاختبار فقط — مش من المصدر؛ الجواب المسطور في الملف هو «الإجابة المكتوبة في الأصل: Atheroembolic AKI.»."
  },
  {
   "mode": "mcq",
@@ -2338,26 +2428,41 @@ const MASTER = [
   "why": "أساس الإجابة مفتاح مطبوع صريح «Answer A» في نفس السؤال.\nالإجابة الواردة في المصدر: الإجابة المطبوعة: A — ADAM13 enzyme deficiency."
  },
  {
-  "mode": "saq",
+  "mode": "mcq",
   "sec": "5) HUS وTTP",
   "n": 14,
   "page": "PAST_YEARS",
   "key": "5) HUS وTTP|14",
   "ai": {
-   "choices": [],
-   "ans": [],
+   "choices": [
+    "Protein C deficiency",
+    "Protein S deficiency",
+    "ADAMTS13 deficiency (printed as «ADMATS13»)",
+    "Factor VIII inhibitor"
+   ],
+   "ans": [
+    2
+   ],
    "text": "in TTP → there is deficiency of ADMATS13",
    "why": [
     "أساس الإجابة البلوك ريكول مطبوع بصيغة «in TTP → …» أي أنه جواب سؤال TTP.",
-    "الإجابة الواردة في المصدر: الإجابة المطبوعة: نقص ADAMTS13 في TTP (مكتوبة في المصدر ADMATS13)."
+    "الإجابة الواردة في المصدر: الإجابة المطبوعة: نقص ADAMTS13 في TTP (مكتوبة في المصدر ADMATS13).",
+    "الاختيارات الثلاثة التانية (المغلطات) مضافة كتدريب للاختبار فقط — مش من المصدر؛ الجواب المسطور في الملف هو «الإجابة المطبوعة: نقص ADAMTS13 في TTP (مكتوبة في المصدر ADMATS13).»."
    ]
   },
   "pdf": {
-   "type": "saq",
-   "choices": [],
-   "ans": [],
-   "note": "الإجابة المطبوعة: نقص ADAMTS13 في TTP (مكتوبة في المصدر ADMATS13).",
-   "lead": "الإجابة المطبوعة: نقص ADAMTS13 في TTP (مكتوبة في المصدر ADMATS13)."
+   "type": "mcq",
+   "choices": [
+    "Protein C deficiency",
+    "Protein S deficiency",
+    "ADAMTS13 deficiency (printed as «ADMATS13»)",
+    "Factor VIII inhibitor"
+   ],
+   "ans": [
+    2
+   ],
+   "note": "الإجابة المسطورة في المصدر: الإجابة المطبوعة: نقص ADAMTS13 في TTP (مكتوبة في المصدر ADMATS13). (لا يوجد حرف مفتاح مطبوع)",
+   "lead": null
   },
   "lines": [
    {
@@ -2370,14 +2475,14 @@ const MASTER = [
    },
    {
     "p": "PAST_YEARS",
-    "t": "✅ الإجابة (كما هي مسطورة في المصدر): الإجابة المطبوعة: نقص ADAMTS13 في TTP (مكتوبة في المصدر ADMATS13)."
+    "t": "✅ الإجابة المسطورة في المصدر (لا يوجد حرف مفتاح مطبوع): الإجابة المطبوعة: نقص ADAMTS13 في TTP (مكتوبة في المصدر ADMATS13)."
    },
    {
     "p": "PAST_YEARS",
     "t": "ليه داخل المحاضرة: ليه داخل المحاضرة؟ المحاضرة: «Classic form of TTP is idiopathic TTP: usually due to a deficiency in ADAMTS13»."
    }
   ],
-  "why": "أساس الإجابة البلوك ريكول مطبوع بصيغة «in TTP → …» أي أنه جواب سؤال TTP.\nالإجابة الواردة في المصدر: الإجابة المطبوعة: نقص ADAMTS13 في TTP (مكتوبة في المصدر ADMATS13)."
+  "why": "أساس الإجابة البلوك ريكول مطبوع بصيغة «in TTP → …» أي أنه جواب سؤال TTP.\nالإجابة الواردة في المصدر: الإجابة المطبوعة: نقص ADAMTS13 في TTP (مكتوبة في المصدر ADMATS13).\nالاختيارات الثلاثة التانية (المغلطات) مضافة كتدريب للاختبار فقط — مش من المصدر؛ الجواب المسطور في الملف هو «الإجابة المطبوعة: نقص ADAMTS13 في TTP (مكتوبة في المصدر ADMATS13).»."
  },
  {
   "mode": "mcq",
@@ -2508,15 +2613,15 @@ const TOPICS = [
    "renal",
    "with",
    "artery",
+   "ttt",
+   "ace",
    "stenosis",
-   "year",
-   "old",
-   "elevated",
-   "creatinine",
-   "taking",
-   "arbs",
+   "function",
    "the",
-   "cause"
+   "conn",
+   "bilateral",
+   "deteriorates",
+   "year"
   ]
  },
  {
@@ -2530,17 +2635,17 @@ const TOPICS = [
   ],
   "w": [
    "membranous",
+   "nephropathy",
+   "disease",
    "and",
    "renal",
    "vein",
    "thrombosis",
+   "iga",
+   "minimal",
+   "change",
    "with",
-   "which",
-   "hypercoagulability",
-   "nephrotic",
-   "protein",
-   "patients",
-   "have"
+   "which"
   ]
  },
  {
@@ -2554,17 +2659,17 @@ const TOPICS = [
   ],
   "w": [
    "and",
+   "acute",
+   "cholesterol",
+   "contrast",
+   "nephropathy",
    "with",
    "days",
    "the",
    "peripheral",
    "mumin",
    "count",
-   "cholesterol",
-   "year",
-   "old",
-   "man",
-   "presents"
+   "syndrome"
   ]
  },
  {
@@ -2601,18 +2706,18 @@ const TOPICS = [
    "5) HUS وTTP|14"
   ],
   "w": [
+   "deficiency",
    "the",
    "ttp",
-   "deficiency",
    "thrombocytosis",
    "which",
    "following",
+   "factor",
+   "viii",
+   "admats13",
+   "protein",
    "haemolytic-uraemic",
-   "syndrome",
-   "hus",
-   "not",
-   "characterised",
-   "haematuria"
+   "syndrome"
   ]
  },
  {
@@ -2641,180 +2746,6 @@ const TOPICS = [
 ];;
 
 const WRITES = {
- "1) تضيق الشريان الكلوي (Renal artery stenosis)|1": {
-  "lead": "bilateral renal artery stenosis.",
-  "bullets": [
-   "bilateral renal artery stenosis"
-  ],
-  "notes": [
-   "File · ✅ الإجابة (كما هي مسطورة في المصدر): bilateral renal artery stenosis.",
-   "الأساس من المحاضرة: أساس الإجابة نص الريكول يضع الحديث في «taking ARBs» مع ارتفاع الكرياتينين، والجواب المسجل هو bilateral renal artery stenosis ؛ لا يوجد حرف مفتاح مطبوع في هذه الصيغة."
-  ],
-  "mnem": "",
-  "wr": {
-   "exact": [
-    "bilateral",
-    "renal",
-    "artery",
-    "stenosis."
-   ],
-   "related": [
-    "bilateral",
-    "renal",
-    "artery",
-    "stenosis."
-   ],
-   "deny": [],
-   "note": "Accept the student's own words as long as the meaning matches the printed answer; the full source answer is shown under «ideal answer».",
-   "min": 1
-  }
- },
- "1) تضيق الشريان الكلوي (Renal artery stenosis)|2": {
-  "lead": "ttt with ACE I deteriorates Renal function.",
-  "bullets": [
-   "ttt with ACE I deteriorates Renal function"
-  ],
-  "notes": [
-   "File · ✅ الإجابة (كما هي مسطورة في المصدر): ttt with ACE I deteriorates Renal function.",
-   "الأساس من المحاضرة: أساس الإجابة الجملة الثانية في البلوك هي الجواب المطبوع، وليست تعليقًا من البنك."
-  ],
-  "mnem": "",
-  "wr": {
-   "exact": [
-    "deteriorates",
-    "renal",
-    "function."
-   ],
-   "related": [
-    "deteriorates",
-    "renal",
-    "function."
-   ],
-   "deny": [],
-   "note": "Accept the student's own words as long as the meaning matches the printed answer; the full source answer is shown under «ideal answer».",
-   "min": 1
-  }
- },
- "2) خثار الوريد الكلوي (Renal vein thrombosis)|3": {
-  "lead": "membranous GN (membranous nephropathy).",
-  "bullets": [
-   "membranous GN (membranous nephropathy)"
-  ],
-  "notes": [
-   "File · ✅ الإجابة (كما هي مسطورة في المصدر): membranous GN (membranous nephropathy).",
-   "الأساس من المحاضرة: أساس الإجابة البلوك كله سطر ريكول واحد: السؤال ثم الجواب بالسهم."
-  ],
-  "mnem": "",
-  "wr": {
-   "exact": [
-    "membranous",
-    "nephropathy"
-   ],
-   "related": [
-    "membranous",
-    "nephropathy"
-   ],
-   "deny": [],
-   "note": "Accept the student's own words as long as the meaning matches the printed answer; the full source answer is shown under «ideal answer».",
-   "min": 1
-  }
- },
- "2) خثار الوريد الكلوي (Renal vein thrombosis)|5": {
-  "lead": "Membranous nephropathy.",
-  "bullets": [
-   "Membranous nephropathy"
-  ],
-  "notes": [
-   "File · ✅ الإجابة (كما هي مسطورة في المصدر): Membranous nephropathy.",
-   "الأساس من المحاضرة: أساس الإجابة سطر الريكول يطبع السؤال والجواب معًا؛ النسخة f075 تكتبها «Hypercoagilability» بالخطأ الإملائي في المصدر."
-  ],
-  "mnem": "",
-  "wr": {
-   "exact": [
-    "membranous",
-    "nephropathy."
-   ],
-   "related": [
-    "membranous",
-    "nephropathy."
-   ],
-   "deny": [],
-   "note": "Accept the student's own words as long as the meaning matches the printed answer; the full source answer is shown under «ideal answer».",
-   "min": 1
-  }
- },
- "3) المرض الأثيري الانصمامي الكلوي (Athero-embolic renal disease)|7": {
-  "lead": "Cholesterol embolization.",
-  "bullets": [
-   "Cholesterol embolization"
-  ],
-  "notes": [
-   "File · ✅ الإجابة (كما هي مسطورة في المصدر): Cholesterol embolization.",
-   "الأساس من المحاضرة: أساس الإجابة سطر ريكول واحد يطبع الحالة والجواب معًا."
-  ],
-  "mnem": "",
-  "wr": {
-   "exact": [
-    "cholesterol",
-    "embolization."
-   ],
-   "related": [
-    "cholesterol",
-    "embolization."
-   ],
-   "deny": [],
-   "note": "Accept the student's own words as long as the meaning matches the printed answer; the full source answer is shown under «ideal answer».",
-   "min": 1
-  }
- },
- "3) المرض الأثيري الانصمامي الكلوي (Athero-embolic renal disease)|8": {
-  "lead": "Atheroembolic AKI.",
-  "bullets": [
-   "Atheroembolic AKI"
-  ],
-  "notes": [
-   "File · ✅ الإجابة (كما هي مسطورة في المصدر): Atheroembolic AKI.",
-   "الأساس من المحاضرة: أساس الإجابة الملف يعرض الحالة تحت عنوان Atheroembolic AKI نفسه، أي أن الإجابة جزء من نص المصدر لا استنتاجًا من البنك."
-  ],
-  "mnem": "",
-  "wr": {
-   "exact": [
-    "atheroembolic",
-    "aki."
-   ],
-   "related": [
-    "atheroembolic",
-    "aki."
-   ],
-   "deny": [],
-   "note": "Accept the student's own words as long as the meaning matches the printed answer; the full source answer is shown under «ideal answer».",
-   "min": 1
-  }
- },
- "5) HUS وTTP|14": {
-  "lead": "نقص ADAMTS13 في TTP (مكتوبة في المصدر ADMATS13).",
-  "bullets": [
-   "نقص ADAMTS13 في TTP (مكتوبة في المصدر ADMATS13)"
-  ],
-  "notes": [
-   "File · ✅ الإجابة (كما هي مسطورة في المصدر): نقص ADAMTS13 في TTP (مكتوبة في المصدر ADMATS13).",
-   "الأساس من المحاضرة: أساس الإجابة البلوك ريكول مطبوع بصيغة «in TTP → …» أي أنه جواب سؤال TTP."
-  ],
-  "mnem": "",
-  "wr": {
-   "exact": [
-    "adamts13",
-    "admats13"
-   ],
-   "related": [
-    "adamts13",
-    "admats13"
-   ],
-   "deny": [],
-   "note": "Accept the student's own words as long as the meaning matches the printed answer; the full source answer is shown under «ideal answer».",
-   "min": 1
-  }
- },
  "6) متلازمة أضداد الشحوم الفوسفورية (Antiphospholipid syndrome)|16": {
   "lead": "Lupus anticoagulant (LA) Anticardiolipin antibodies Anti-β2 glycoprotein I antibodies",
   "bullets": [
